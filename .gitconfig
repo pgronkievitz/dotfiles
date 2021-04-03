@@ -6,6 +6,7 @@
     uncommit = reset --soft HEAD
     unstage = reset
     s = status
+    cm = commit -m
     co = checkout
     cob = checkout -b
     del = branch -D
