@@ -8,3 +8,4 @@ alias ping="ping -c 3"
 alias l=exa
 alias ll='exa -lh'
 alias la='exa -lha'
+alias tree='exa --tree'
