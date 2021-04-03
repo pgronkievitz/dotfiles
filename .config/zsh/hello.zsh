@@ -7,7 +7,7 @@ zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 
 # history is important!
 HISTSIZE=10000
 SAVEHIST=$HISTSIZE
-HISTFILE=~/.zsh_history
+HISTFILE=$HOME/.cache/zsh_history
 
 # Hello there
 figlet -f slant < /etc/hostname | lolcat
