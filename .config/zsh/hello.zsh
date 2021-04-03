@@ -2,6 +2,8 @@
 autoload -Uz compinit
 compinit
 
+# let zsh be a bit more numb
+zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 # history is important!
 HISTSIZE=10000
 SAVEHIST=$HISTSIZE
