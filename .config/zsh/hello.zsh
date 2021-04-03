@@ -37,8 +37,8 @@ bindkey "^[[A" history-search-backward
 bindkey "^[[B" history-search-forward
 
 # misc
-source $HOME/.local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source $HOME/.local/share/zsh/zsh-history-substring-search.zsh
+source $HOME/.config/zsh/zsh-syntax-highlighting.zsh
+source $HOME/.config/zsh/zsh-history-substring-search.zsh
 
 # move npm to XDG dirs
 export NPM_CONFIG_USERCONFIG=$XDG_CONFIG_HOME/npm/npmrc
