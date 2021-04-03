@@ -44,3 +44,6 @@ source $HOME/.local/share/zsh/zsh-history-substring-search.zsh
 export NPM_CONFIG_USERCONFIG=$XDG_CONFIG_HOME/npm/npmrc
 # remove less hist file
 export LESSHISTFILE=-
+# clean up rust
+export CARGO_HOME="$HOME"/.local/share/cargo
+export RUSTUP_HOME="$HOME"/.local/share/rustup
