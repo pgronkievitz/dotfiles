@@ -1,6 +1,7 @@
 [user]
     name = Patryk Gronkiewicz
     email = patryk@gronkiewicz.xyz
+	signingkey = AFE7E2FEE443F184
 
 [alias]
     uncommit = reset --soft HEAD
@@ -27,3 +28,8 @@
     prompt = true
 [difftool "nvimdiff"]
     cmd = "nvim -d \"$LOCAL\" \"$REMOTE\""
+[commit]
+	gpgsign = true
+
+[init]
+    defaultBranch = main
