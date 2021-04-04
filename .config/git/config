@@ -1,6 +1,6 @@
 [user]
     name = Patryk Gronkiewicz
-    email = patryk@gronkiewicz.xyz
+	email = patryk@gronkiewicz.dev
 	signingkey = AFE7E2FEE443F184
 
 [alias]
