@@ -4,7 +4,7 @@
 let mapleader=" "
 nnoremap <leader>w <C-w>
 tnoremap <esc> <c-\><c-n>
-nnoremap <leader>pp :vsp \| term glow -p %<CR>
+nnoremap <leader>pp :Glow<CR>
 
 """"""""""""""""""""
 "     FUGITIVE     "

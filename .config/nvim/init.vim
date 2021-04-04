@@ -9,6 +9,7 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'pgronkievitz/notoire'
     Plug 'preservim/nerdcommenter'
     Plug 'jiangmiao/auto-pairs'
+    Plug 'npxbr/glow.nvim', {'do': ':GlowInstall'}
 call plug#end()
 
 source /home/pg/.config/nvim/aesthetics.vim
