@@ -6,7 +6,7 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
     Plug 'BurntSushi/ripgrep'
-    Plug 'KevinBockelandt/notoire'
+    Plug 'pgronkievitz/notoire'
     Plug 'preservim/nerdcommenter'
     Plug 'jiangmiao/auto-pairs'
 call plug#end()
