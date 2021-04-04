@@ -3,6 +3,7 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'chriskempson/base16-vim'
     Plug 'tpope/vim-fugitive'
     Plug 'tpope/vim-surround'
+    Plug 'npxbr/glow.nvim', {'do': ':GlowInstall'}
 call plug#end()
 
 source /home/pg/.config/nvim/aesthetics.vim
