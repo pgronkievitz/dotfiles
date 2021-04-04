@@ -6,3 +6,8 @@ set copyindent autoindent
 set expandtab smarttab softtabstop=0 tabstop=4 shiftwidth=4 " make tabs worse again
 set cc=80,100
 set showcmd
+
+""""""""
+" FZF  "
+""""""""
+let g:fzf_layout = { 'down': '40%'}

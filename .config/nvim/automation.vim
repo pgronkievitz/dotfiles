@@ -1,2 +1,2 @@
 set autoread
-autocmd! bufwritepost init.vim source ~/.config/nvim/init.vim
+autocmd! bufwritepost *.vim source ~/.config/nvim/init.vim
