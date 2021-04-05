@@ -1,6 +1,7 @@
 """"""""""""""""""""
 "      NATIVE      "
 """"""""""""""""""""
+
 let mapleader=" "
 nnoremap <leader>w <C-w>
 tnoremap <esc> <c-\><c-n>
@@ -19,11 +20,20 @@ nnoremap <leader>gpu :Git pull<CR>
 "        FZF       "
 """"""""""""""""""""
 
-nnoremap <leader>f :Files<CR>
+nnoremap <leader><space> :Files<CR>
+nnoremap <C-p> :GFiles<CR>
+
+""""""""""""""""""""
+"        CoC       "
+""""""""""""""""""""
+
+nnoremap <leader>gd <Plug>(coc-definitions)
+nnoremap <leader>gr <Plug>(coc-references)
 
 """"""""""""""""""""
 "      NOTOIRE     "
 """"""""""""""""""""
+
 nnoremap <Leader>l :<C-U>NotoireNextLink(v:count1)<cr>
 nnoremap <Leader>h :<C-U>NotoirePrevLink(v:count1)<cr>
 
