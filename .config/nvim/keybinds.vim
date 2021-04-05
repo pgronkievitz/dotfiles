@@ -29,6 +29,8 @@ nnoremap <C-p> :GFiles<CR>
 
 nnoremap <leader>gd <Plug>(coc-definitions)
 nnoremap <leader>gr <Plug>(coc-references)
+nnoremap <leader>gy <Plug>(coc-type-definitions)
+nnoremap <leader>gi <Plug>(coc-implementation)
 
 """"""""""""""""""""
 "      NOTOIRE     "
