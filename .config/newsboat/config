@@ -1,0 +1,27 @@
+urls-source "ttrss"
+ttrss-url "https://rss.tildeverse.org"
+ttrss-login "pg"
+ttrss-passwordeval "secret-tool lookup platform ttrss"
+
+auto-reload yes
+browser "/usr/bin/w3m %u"
+
+# unbind keys
+unbind-key ENTER
+unbind-key j
+unbind-key k
+unbind-key J
+unbind-key K
+
+# bind keys - vim style
+bind-key j down
+bind-key k up
+bind-key l open
+bind-key h quit
+
+bookmark-cmd instapaper.sh
+bookmark-autopilot yes
+bind-key i bookmark
+
+color listfocus white blue
+color listfocus_unread white blue bold
