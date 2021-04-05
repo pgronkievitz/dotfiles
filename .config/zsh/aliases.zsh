@@ -2,6 +2,7 @@
 
 alias space='df -h 2>& /dev/null  | grep -v tmp' # i want to know how much space free i've got
 alias g=git # it's 67% more efficient!
+compdef g='git'
 alias ping="ping -c 3"
 
 # ls, but better
