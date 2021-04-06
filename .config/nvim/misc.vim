@@ -8,3 +8,5 @@ filetype plugin on
 set splitbelow splitright
 
 let g:python3_host_prog = "/usr/bin/python3"
+
+let g:zettel_fzf_command='rg'
