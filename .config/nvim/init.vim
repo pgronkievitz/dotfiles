@@ -12,6 +12,7 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'preservim/nerdcommenter'
     Plug 'jiangmiao/auto-pairs'
     Plug 'npxbr/glow.nvim', {'do': ':GlowInstall'}
+    Plug 'liuchengxu/vim-which-key', { 'on': ['WhichKey', 'WhichKey!'] }
 call plug#end()
 
 source /home/pg/.config/nvim/aesthetics.vim

@@ -32,3 +32,4 @@ nnoremap <leader>gr <Plug>(coc-references)
 nnoremap <leader>gy <Plug>(coc-type-definitions)
 nnoremap <leader>gi <Plug>(coc-implementation)
 
+nnoremap <silent> <leader> :WhichKey '<Space>'<CR>
