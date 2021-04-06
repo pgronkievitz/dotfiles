@@ -3,7 +3,7 @@
 """"""""""""""""""""
 
 let mapleader=" "
-nnoremap <leader>w <C-w>
+nnoremap ;w <C-w>
 tnoremap <esc> <c-\><c-n>
 nnoremap <leader>pp :Glow<CR>
 
