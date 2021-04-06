@@ -1,6 +1,7 @@
 call plug#begin('~/.config/nvim/plugged')
-	Plug 'neoclide/coc.nvim', {'branch': 'release'}
-    Plug 'chriskempson/base16-vim'
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    Plug 'pappasam/coc-jedi', { 'do': 'yarn install --frozen-lockfile && yarn build' }
+	Plug 'chriskempson/base16-vim'
     Plug 'tpope/vim-fugitive'
     Plug 'tpope/vim-surround'
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
