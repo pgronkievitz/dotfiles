@@ -4,10 +4,12 @@ ttrss-login "pg"
 ttrss-passwordeval "secret-tool lookup platform ttrss"
 
 auto-reload yes
+reload-threads 100
 browser "/usr/bin/w3m %u"
 
+feed-sort-order unreadarticlecount-desc
+
 # unbind keys
-unbind-key ENTER
 unbind-key j
 unbind-key k
 unbind-key J
