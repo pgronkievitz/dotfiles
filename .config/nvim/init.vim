@@ -7,7 +7,8 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
     Plug 'BurntSushi/ripgrep'
-    Plug 'pgronkievitz/notoire'
+    Plug 'vimwiki/vimwiki'
+    Plug 'michal-h21/vim-zettel'
     Plug 'preservim/nerdcommenter'
     Plug 'jiangmiao/auto-pairs'
     Plug 'npxbr/glow.nvim', {'do': ':GlowInstall'}
