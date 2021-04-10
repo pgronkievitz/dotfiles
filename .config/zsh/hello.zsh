@@ -19,7 +19,7 @@ setopt extended_glob
 setopt completealiases
 # sane default apps
 export EDITOR=nvim
-export BROWSER=brave-browser
+export BROWSER=vivaldi
 
 # passes aliases over to root when using sudo
 if [ $UID -ne 0 ]; then
