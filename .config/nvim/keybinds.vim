@@ -27,13 +27,5 @@ nnoremap <leader>ff :Files<CR>
 nnoremap <leader>fl :Lines<CR>
 nnoremap <leader>fc :Commits<CR>
 
-""""""""""""""""""""
-"        CoC       "
-""""""""""""""""""""
-
-nnoremap <leader>gd <Plug>(coc-definitions)
-nnoremap <leader>gr <Plug>(coc-references)
-nnoremap <leader>gy <Plug>(coc-type-definitions)
-nnoremap <leader>gi <Plug>(coc-implementation)
 
 nnoremap <silent> <leader> :WhichKey '<Space>'<CR>
