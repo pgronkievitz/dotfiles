@@ -22,6 +22,10 @@ nnoremap <leader>gpu :Git pull<CR>
 
 nnoremap <leader><space> :Files<CR>
 nnoremap <C-p> :GFiles<CR>
+nnoremap <leader>fr :Rg<CR>
+nnoremap <leader>ff :Files<CR>
+nnoremap <leader>fl :Lines<CR>
+nnoremap <leader>fc :Commits<CR>
 
 """"""""""""""""""""
 "        CoC       "
