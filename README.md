@@ -1,8 +1,8 @@
 # _pgronkievitz_'s dotfiles
 
-## Installation
+## installation
 
-It's just as easy as
+it's just as easy as
 
 ```shell
 git clone git@github.com:pgronkievitz/dotfiles.git
@@ -10,7 +10,7 @@ git clone git@github.com:pgronkievitz/dotfiles.git
 
 and copy those files into your home folder
 
-## Requirements
+## requirements
 
 - zsh - my default shell
 - starship - prompt
@@ -22,7 +22,7 @@ and copy those files into your home folder
 - neovim
 - kitty - GPU accelerated terminal with ligatures
 
-### Neovim requirements
+### neovim requirements
 
 - [vim-plug](https://github.com/junegunn/vim-plug) - plugin management
-- NPM & node.js - necessary for CoC.nvim
+- npm & node.js - necessary for coc.nvim
