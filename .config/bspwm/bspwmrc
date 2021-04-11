@@ -1,13 +1,24 @@
-#! /bin/sh
+#!bin/sh
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 
-bspc monitor -d I II III IV V VI VII VIII IX X
+mons=$(xrandr | grep -w connected | wc -l) # TODO: make monitors behave properly
+if [ $mons -eq 1 ]; then
+    echo "1 monitor connected"
+elif [ $mons -eq 2 ]; then
+    echo "2 monitors connected"
+elif [ $mons -eq 3 ]; then
+    echo "3 monitors connected"
+end
 
-bspc config border_width         2
-bspc config window_gap          12
+# TODO: run polybar only on laptop screen (eDP)
 
-bspc config split_ratio          0.52
+bspc monitor -d 1 2 3 4 5 6 7 8 9 10
+
+bspc config border_width         1
+bspc config window_gap           4
+
+bspc config split_ratio          0.55
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
