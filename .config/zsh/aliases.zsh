@@ -11,8 +11,4 @@ alias ll='exa -lh'
 alias la='exa -lha'
 alias tree='exa --tree'
 
-if [ -f $HOME/.cache/vim_night ]; then
-    alias glow="glow -s dark"
-else
-    alias glow="glow -s light"
-fi
+alias notes="cd $NOTES"

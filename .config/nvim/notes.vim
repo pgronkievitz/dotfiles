@@ -1,6 +1,7 @@
-let uczelnia = {}
-let uczelnia.path = '~/Documents/Uczelnia'
-let uczelnia.path_html = '~/Documents/Uczelnia/html'
-let uczelnia.syntax = 'markdown'
-let uczelnia.ext = '.md'
-let g:vimwiki_list = [uczelnia]
+"nnoremap <leader>nn :cd $NOTES<CR>:Rg<CR>
+command! -nargs=1 Ngrep grep "<args>" -g "*.md" $NOTES_DIR
+
+"Make :grep use ripgrep
+if executable('rg')
+    set grepprg=rg\ 
+endif

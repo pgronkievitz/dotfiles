@@ -7,12 +7,13 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
     Plug 'BurntSushi/ripgrep'
-    Plug 'vimwiki/vimwiki'
-    Plug 'michal-h21/vim-zettel'
     Plug 'preservim/nerdcommenter'
     Plug 'jiangmiao/auto-pairs'
-    Plug 'npxbr/glow.nvim', {'do': ':GlowInstall'}
     Plug 'liuchengxu/vim-which-key', { 'on': ['WhichKey', 'WhichKey!'] }
+    Plug 'godlygeek/tabular'
+    Plug 'plasticboy/vim-markdown'
+    Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+    Plug 'tpope/vim-unimpaired'
 call plug#end()
 
 source /home/pg/.config/nvim/aesthetics.vim
