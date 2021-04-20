@@ -6,8 +6,9 @@ let mapleader=" "
 nnoremap <leader>w <C-w>
 tnoremap <esc> <c-\><c-n>
 nnoremap <leader>pp :MarkdownPreviewToggle<CR>
-
-""""""""""""""""""""
+" make Y behaviour consistent
+nnoremap Y y$
+"""""""""""""""""""""
 "     FUGITIVE     "
 """"""""""""""""""""
 
@@ -31,12 +32,8 @@ nnoremap <leader>fc :Commits<CR>
 "      NOTES       "
 """"""""""""""""""""
 "insert link from selected text
-vmap <C-space> ygvS]%a(<esc>pa.md<esc>ll <esc><esc>a
-vmap <leader>l S]%a(<C-space>
 nnoremap <leader>ni :e $NOTES/index.md<CR>:cd $NOTES<CR>
-nnoremap <leader>nf :cd $NOTES<CR>:FZF<CR>
-nnoremap <leader>nn :Ngrep 
-imap <C-space> <plug>(fzf-complete-file)
+nnoremap <leader>nf :cd $NOTES<CR>:Files<CR>
 
 nnoremap <silent> <leader> :WhichKey '<Space>'<CR>
 nnoremap <leader>t :Tags<CR>
