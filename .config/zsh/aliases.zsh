@@ -12,3 +12,5 @@ alias la='exa -lha'
 alias tree='exa --tree'
 
 alias notes="cd $NOTES"
+
+eval $(pandoc --bash-completion)
