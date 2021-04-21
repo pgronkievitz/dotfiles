@@ -1,0 +1,92 @@
+super + shift + x
+    killall sxhkd && sxhkd &
+
+super + alt + {q,r}
+    bspc {quit,wm -r}
+
+super + w
+    vivaldi-stable
+
+super + z
+    kitty nvim /home/pg/Documents/notes/index.md -c "cd $NOTES"
+
+super + e
+    birdtray -t
+
+super + space
+    rofi -modi drun,ssh -show drun
+
+super + Return
+    kitty
+
+super + {_,shift} + q
+    bspc node -{c,k}
+
+super + m
+    bspc desktop -l next
+
+super + y
+    bspc node newest.marked.local -n newest.!automatic.local
+
+super + g
+    bspc node -s biggest.window
+
+super + ctrl + {m,x,y,z}
+	bspc node -g {marked,locked,sticky,private}
+
+super + {_,shift + }{h,j,k,l}
+	bspc node -{f,s} {west,south,north,east}
+
+super + bracket{left,right}
+	bspc desktop -f {prev,next}.local
+
+super + {_,shift + }{1-9}
+	bspc {desktop -f,node -d} '^{1-9}'
+
+super + ctrl + {h,j,k,l}
+	bspc node -p {west,south,north,east}
+
+super + ctrl + {1-9}
+	bspc node -o 0.{1-9}
+
+super + ctrl + space
+	bspc node -p cancel
+
+super + alt + {h,j,k,l}
+	bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
+	
+super + alt + shift + {h,j,k,l}
+	bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
+
+super + {Left,Down,Up,Right}
+	bspc node -v {-20 0,0 20,0 -20,20 0}
+
+Print
+    flatpak run org.flameshot.Flameshot gui
+
+XF86AudioPlay
+    playerctl play-pause
+
+super + XF86AudioLowerVolume
+    playerctl previous
+
+super + XF86AudioRaiseVolume
+    playerctl next
+
+super + XF86AudioMute
+    playerctl stop
+
+XF86AudioLowerVolume
+    vol down
+
+XF86AudioRaiseVolume
+    vol up
+
+XF86AudioMute
+    vol mute
+
+XF86MonBrightnessDown
+    light -U 10
+
+XF86MonBrightnessUp
+    light -A 10

@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+internal_monitor=eDP
+ext_monitor_DP="DisplayPort-1"
+ext_monitor_HDMI=HDMI1
+
+for i in {1..9}; do
+    bspc desktop $i -m $ext_monitor_DP
+done
+launchpolybar.sh
+xwallpaper --zoom $HOME/.cache/wallpaper.jpg

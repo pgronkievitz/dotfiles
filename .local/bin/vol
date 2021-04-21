@@ -1,0 +1,13 @@
+#!/bin/sh
+
+if [ "$1" = "up" ]; then
+    pactl set-sink-volume $(pactl list short sinks | grep RUNNING | awk '{print $1}') +5%
+elif [ "$1" = "down" ]; then
+    pactl set-sink-volume $(pactl list short sinks | grep RUNNING | awk '{print $1}') -5%
+elif [ "$1" = "mute" ]; then
+    pactl set-sink-mute $(pactl list short sinks | grep RUNNING | awk '{print $1}') toggle
+else
+    echo "Usage"
+    echo -e "\tup\tvolume up"
+    echo -e "\tdown\tvolume down"
+fi

@@ -1,0 +1,115 @@
+[colors]
+background = #282c34
+background-alt = #545862
+foreground = #abb2bf
+ok = #98c379
+warning = #e5c07b
+alert = #e06c75
+volume = #61afef
+
+[bar/bar]
+monitor = DisplayPort-1
+fallback-monitor = eDP
+
+width = 100%
+heigth = 15
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+border-size = 0
+
+padding = 3
+module-margin = 1
+
+font-0 = JetBrainsMono Nerd Font:size=14;3
+
+modules-left = workspaces
+modules-center = time
+modules-right = battery backlight volume
+
+separator = |
+
+locale = en_US.UTF-8
+
+tray-position = right
+tray-maxsize = 14
+tray-background = #282c34
+
+enable-ipc = true
+
+[module/workspaces]
+type = internal/bspwm
+pin-workspaces = false
+format = <label-state>
+label-empty = " %name% "
+label-focused = " %name% "
+label-occupied = " %name% "
+label-urgent = " %name% "
+
+label-focused-background = ${colors.volume}
+label-empty-background = ${colors.background}
+label-occupied-background = ${colors.background-alt}
+label-urgent-background = ${colors.alert}
+
+label-focused-foreground = ${colors.background-alt}
+label-empty-foreground = ${colors.foreground}
+label-occupied-foreground = ${colors.foreground}
+label-urgent-foreground = ${colors.foreground}
+
+label-separator = |
+label-padding = 2
+label-separator-padding = 0
+
+[module/time]
+type = internal/date
+interval = 15.0
+date = %Y-%m-%d
+time = %H:%M
+label = %date% %time%
+
+[module/battery]
+type = internal/battery
+battery = BAT0
+adapter = AC
+format-charging = BAT [<bar-capacity>]
+format-charging-foreground = ${colors.ok}
+format-full = BAT [<bar-capacity>]
+format-full-foreground = ${colors.ok}
+format-discharging = BAT [<bar-capacity>]
+format-discharging-foreground = ${colors.warning}
+
+poll-interval = 30
+
+label-charging = %percentage%%
+
+label-discharging = %percentage%%
+
+bar-capacity-width = 10
+bar-capacity-indicator = |
+bar-capacity-empty = -
+bar-capacity-fill = -
+[module/backlight]
+type = internal/backlight
+card = amdgpu_bl0
+enable-scroll = true
+format = BRI [<bar>]
+bar-width = 10
+bar-indicator = |
+bar-empty = -
+bar-fill = -
+format-foreground = ${colors.warning}
+
+[module/volume]
+type = internal/pulseaudio
+interval = 20
+format-volume = VOL [<bar-volume>]
+label-muted = MUT
+label-volume = %percentage%%
+right-click = pavucontrol
+bar-volume-width = 10
+bar-volume-indicator = |
+bar-volume-empty = -
+bar-volume-fill = -
+
+format-volume-foreground = ${colors.volume}
