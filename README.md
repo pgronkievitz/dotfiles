@@ -1,3 +1,5 @@
+# ***DEPRECATED***
+
 # _pgronkievitz_'s dotfiles
 
 ## installation
